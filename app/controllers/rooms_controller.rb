@@ -15,10 +15,15 @@ class RoomsController < ApplicationController
 
     #post
     post "/rooms" do
+        room = Room.create(tenant_name: params[:tenant_name] , sq_feet: params[:sq_feet], windows: params[:windows], house_id: params[:house_id])
+        room.to_json
     end
 
     #delete
     delete "/rooms/:id" do
+        room = Room.find(params[:id])
+        room.destroy
+        room.to_json
     end
 
 end

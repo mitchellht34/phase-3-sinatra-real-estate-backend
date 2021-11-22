@@ -7,9 +7,3 @@ class CreateHouses < ActiveRecord::Migration[6.1]
     end
   end
 end
-
-#House
-  #address: string
-  #stories: integer
-  #garage: boolean
-  #has_many rooms

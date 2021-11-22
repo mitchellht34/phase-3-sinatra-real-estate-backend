@@ -8,9 +8,3 @@ class CreateRooms < ActiveRecord::Migration[6.1]
     end
   end
 end
-
-#Room
-  #sq footage: integer
-  #number of windows: integer
-  #tenant_name: string
-  #room belongs_to house

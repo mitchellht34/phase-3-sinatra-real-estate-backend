@@ -4,7 +4,7 @@ class CreateRooms < ActiveRecord::Migration[6.1]
       t.string :tenant_name
       t.integer :sq_feet
       t.integer :windows
-      t.integer :house_id #foreign_key
+      t.belongs_to :house #foreign_key
     end
   end
 end
